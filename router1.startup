@@ -3,3 +3,5 @@ ip link set dev eth1 up
 ip a add 192.168.100.254/24 dev eth0
 ip a add 172.16.0.200/24 dev eth1
 iptables -t nat -A POSTROUTING -o eth2 -j MASQUERADE
+ip r add 192.168.0.0/24 via 172.16.0.254
+ip r add 10.20.30.0/24 via 172.16.0.254
