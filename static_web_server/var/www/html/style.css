@@ -1,0 +1,8 @@
+.container {
+	text-align: center;
+}
+
+.container pre {
+	display: inline-block;
+	text-align: left;
+}

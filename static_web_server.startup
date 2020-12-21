@@ -1,3 +1,4 @@
 ip link set dev eth0 up
 ip a add 10.20.30.100/24 dev eth0
 ip r add default via 10.20.30.254
+service apache2 start
