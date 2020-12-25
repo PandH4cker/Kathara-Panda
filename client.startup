@@ -1,3 +1,4 @@
 ip link set dev eth0 up
 ip a add 192.168.0.1/24 dev eth0
 ip r add default via 192.168.0.254
+ifdown --force eth0 && ip addr flush dev eth0 && ifup --force eth0

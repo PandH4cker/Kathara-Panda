@@ -1,0 +1,24 @@
+acl "trusted" {
+	192.168.100.100; # DNS Server
+	10.20.30.100; # Static Web Server
+	192.168.0.1; # Client
+	172.16.0.100; # Java Web Server
+};
+
+options {
+	directory "/var/cache/bind";
+
+	recursion yes;
+	allow-recursion { trusted; };
+	listen-on { 127.0.0.1; 192.168.100.100; };
+	allow-transfer { none; };
+	
+	forwarders {
+		8.8.8.8;
+		8.8.4.4;
+	};
+	
+	dnssec-validation auto;
+	
+	auth-nxdomain no;
+};

@@ -1,0 +1,9 @@
+zone "panda-crew.com" IN {
+	type master;
+	file "/etc/bind/zones/db.panda-crew.com";
+};
+
+zone "100.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/zones/db.100.168.192";
+};

@@ -1,4 +1,9 @@
 ip link set dev eth0 up
 ip a add 10.20.30.100/24 dev eth0
 ip r add default via 10.20.30.254
+ifdown --force eth0 && ip addr flush dev eth0 && ifup --force eth0
+echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
 service apache2 start
+a2ensite sws.panda-crew.com.conf
+a2dissite 000-default.conf
+service apache2 restart

@@ -1,0 +1,3 @@
+RESOLVCONF=no
+
+OPTIONS="-u bind -4"

@@ -1,0 +1,12 @@
+source-directory /etc/network/interfaces.d
+
+auto eth0
+
+iface eth0 inet static
+	address 10.20.30.100
+	netmask 255.255.255.0
+	network	10.20.30.0
+	broadcast 10.20.30.255
+	gateway	10.20.30.254
+	dns-nameservers	192.168.100.100 8.8.8.8
+	dns-search	panda-crew.com
