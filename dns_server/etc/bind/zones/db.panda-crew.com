@@ -15,3 +15,6 @@ giga.panda-crew.com.	IN	A	192.168.100.100
 ; hosts - A records
 jws.panda-crew.com.	IN	A	172.16.0.100
 sws.panda-crew.com.	IN	A	10.20.30.100
+
+; aliases - CNAME records
+www.panda-crew.com.	IN	CNAME	jws.panda-crew.com.
