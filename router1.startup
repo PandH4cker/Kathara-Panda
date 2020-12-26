@@ -1,3 +1,4 @@
+# Network definition
 ip link set dev eth0 up
 ip link set dev eth1 up
 ip a add 192.168.100.254/24 dev eth0

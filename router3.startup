@@ -1,7 +1,7 @@
+# Network definition
 ip link set dev eth1 up
 ip link set dev eth0 up
 ip a add 172.16.0.254/24 dev eth1
 ip a add 10.20.30.254/24 dev eth0
 ip r add 192.168.0.0/24 via 10.20.30.10
 ip r add default via 172.16.0.200
-#ip r add 192.168.100.0/24 via 172.16.0.200
