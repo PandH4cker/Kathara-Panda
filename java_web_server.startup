@@ -2,3 +2,21 @@ ip link set dev eth0 up
 ip a add 172.16.0.100/24 dev eth0
 ip r add default via 172.16.0.254
 ifdown --force eth0 && ip addr flush dev eth0 && ifup --force eth0
+
+cat > /etc/hosts <<- EOM
+127.0.0.1       localhost
+10.20.30.100    sws.panda-crew.com
+192.168.100.100 giga.panda-crew.com
+
+::1     localhost ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+EOM
+
+bash /opt/java_installer.sh
+rm -rf /openjdk-11.0.2_linux-x64_bin.tar.gz
+cd /opt/jws/
+/usr/local/jdk-11.0.2/bin/javac JWS.java
+/usr/local/jdk-11.0.2/bin/java JWS 1111
