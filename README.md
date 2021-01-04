@@ -10,7 +10,7 @@
 
 ## Introduction 
 
-[Katara](https://www.kathara.org) is a network emulation system based on Docker where each device is emulated by an unique container which is interconnected by virtual L2 LANs. Kathara is helpful to develop new network protocols within a testing network sandbox environment. 
+[Kathara](https://www.kathara.org) is a network emulation system based on Docker where each device is emulated by an unique container which is interconnected by virtual L2 LANs. Kathara is helpful to develop new network protocols within a testing network sandbox environment. 
 
 <p align="center" width="100%">
     <img align="center" width="554" height="136" src="./pictures/logo.png"/>
@@ -19,6 +19,7 @@
 <hr><br>
 
 ## How does it works?
+Each network device is emulated by a Docker container , and each container can run a Docker image. That's why Kathara is helpful to build and develop new networks.
 
 __Run Kathara's clusters__
 
