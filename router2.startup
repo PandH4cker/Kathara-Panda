@@ -1,6 +1,12 @@
 # Network definition
+
+# Enabling interfaces
 ip link set dev eth1 up
 ip link set dev eth0 up
+
+# ip mapping
 ip a add 10.20.30.10/24 dev eth1
 ip a add 192.168.0.254/24 dev eth0
+
+# Routing table
 ip r add default via 10.20.30.254
