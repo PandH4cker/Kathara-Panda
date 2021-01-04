@@ -30,11 +30,11 @@ Requirements:
 Important: Run Docker before Kathara
 
 ```bash
-#Start the project 
+#Start the project by looking at the lab.conf definitions
 > kathara lstart
 
-#Stop the project
-> kathara lclean
+#Stop all computers started from the lab.conf file
+> kathara wipe
 ```
 
 ## Project description 
