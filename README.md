@@ -36,3 +36,11 @@ Important: Run Docker before Kathara
 #Stop the project
 > kathara lclean
 ```
+
+## Project description 
+
+__Network Schema__
+
+<p align="center" width="100%">
+    <img align="center" width="576" height="422" src="./pictures/network.PNG"/>
+</p>
