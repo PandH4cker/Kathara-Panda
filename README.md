@@ -20,14 +20,16 @@
 
 ## How does it work?
 
-__Run Kathara's clusters__
+### Run Kathara's clusters
 
-Requirements: 
+__Requirements:__
 - [Kathara installation](https://github.com/KatharaFramework/Kathara/wiki)
 - [Docker installation](https://www.docker.com/get-started)
 <br>
 
-Important: Run Docker before Kathara
+__Important:__ 
+
+Kathara need Docker to be running to start computers. So you will to run Docker before Kathara lab.
 
 ```bash
 #Start the project by looking at the lab.conf definitions
