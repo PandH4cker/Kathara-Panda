@@ -102,7 +102,7 @@ traceroute to www.panda-crew.com (172.16.0.100), 30 hops max, 60 byte packets
 ```
 <br>
 <p align="center" width="100%">
-    <img align="center" width="893" height="941" src="./pictures/panda.png"/>
+    <img align="center" width="969" height="957" src="./pictures/panda.png"/>
 </p>
 
 <br>
